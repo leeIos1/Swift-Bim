@@ -13,6 +13,7 @@
 		18B18155247CB179000BA796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B18154247CB179000BA796 /* Assets.xcassets */; };
 		18B18158247CB179000BA796 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B18157247CB179000BA796 /* Preview Assets.xcassets */; };
 		18B1815B247CB179000BA796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B18159247CB179000BA796 /* LaunchScreen.storyboard */; };
+		1DF6D3D184168531E5032D10 /* Pods_Max_Bim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C831CDBB8332DAF0B57872 /* Pods_Max_Bim.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		18B18157247CB179000BA796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18B1815A247CB179000BA796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B1815C247CB179000BA796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8846E9899137B708115E3FEB /* Pods-Max-Bim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Max-Bim.release.xcconfig"; path = "Target Support Files/Pods-Max-Bim/Pods-Max-Bim.release.xcconfig"; sourceTree = "<group>"; };
+		99C831CDBB8332DAF0B57872 /* Pods_Max_Bim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Max_Bim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE464ED7EA0D3F4375581FD7 /* Pods-Max-Bim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Max-Bim.debug.xcconfig"; path = "Target Support Files/Pods-Max-Bim/Pods-Max-Bim.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF6D3D184168531E5032D10 /* Pods_Max_Bim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				18B1814D247CB163000BA796 /* Max-Bim */,
 				18B1814C247CB163000BA796 /* Products */,
+				FC89828F9BE4E24A8546D8E9 /* Pods */,
+				4E6F41B7C9BE02CC41FC8AD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4E6F41B7C9BE02CC41FC8AD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99C831CDBB8332DAF0B57872 /* Pods_Max_Bim.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC89828F9BE4E24A8546D8E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE464ED7EA0D3F4375581FD7 /* Pods-Max-Bim.debug.xcconfig */,
+				8846E9899137B708115E3FEB /* Pods-Max-Bim.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18B1815F247CB179000BA796 /* Build configuration list for PBXNativeTarget "Max-Bim" */;
 			buildPhases = (
+				84D49982F0312C6EC8AA3C8F /* [CP] Check Pods Manifest.lock */,
 				18B18147247CB163000BA796 /* Sources */,
 				18B18148247CB163000BA796 /* Frameworks */,
 				18B18149247CB163000BA796 /* Resources */,
+				2A62396DB6A4BDFAF6801FB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A62396DB6A4BDFAF6801FB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Max-Bim/Pods-Max-Bim-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Max-Bim/Pods-Max-Bim-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Max-Bim/Pods-Max-Bim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84D49982F0312C6EC8AA3C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Max-Bim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18B18147247CB163000BA796 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		18B18160247CB179000BA796 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE464ED7EA0D3F4375581FD7 /* Pods-Max-Bim.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +372,7 @@
 		};
 		18B18161247CB179000BA796 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8846E9899137B708115E3FEB /* Pods-Max-Bim.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

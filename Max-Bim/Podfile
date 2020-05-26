@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+target 'Max-Bim' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Kingfisher'
+  pod 'SwiftTheme'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SQLite.swift'
+  pod 'SVProgressHUD'
+  pod 'MJRefresh'
+  # Pods for Max-Bim
+
+end
+
