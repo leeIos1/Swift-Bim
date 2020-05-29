@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "videocall.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
